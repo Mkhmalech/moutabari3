@@ -7,7 +7,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var userHandler = __importStar(require("../user-medical-api"));
+var userHandler = __importStar(require("./user-medical-api/index"));
 var routes = function ($) {
     $.get("/", function (req, res, next) {
         res.send('<bold> Hello World </b>');

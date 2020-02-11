@@ -1,5 +1,5 @@
 import express from 'express';
-import * as userHandler from '../user-medical-api'
+import * as userHandler from './user-medical-api/index'
 
 
 

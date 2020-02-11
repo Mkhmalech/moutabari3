@@ -53,8 +53,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var users_1 = require("../module/users");
 var bcrypt_1 = __importDefault(require("bcrypt"));
 var jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
-var Counter_1 = require("../../../controllers/Counter");
-var Db_1 = __importDefault(require("../../../controllers/core/Db"));
+var code_ittyni_api_1 = require("../../../code-ittyni-api");
+var index_1 = require("../../../db-ittyni-api/index");
 var User = /** @class */ (function () {
     function User() {
         var _this = this;
@@ -63,7 +63,7 @@ var User = /** @class */ (function () {
          * user model to make all our operations only
          * in this model
          */
-        this.user = new Db_1.default(users_1.USER);
+        this.user = new index_1.Db(users_1.USER);
         //Protected methods
         /**
          *
@@ -123,7 +123,7 @@ var User = /** @class */ (function () {
                 var count, User_1, newUser;
                 return __generator(this, function (_a) {
                     switch (_a.label) {
-                        case 0: return [4 /*yield*/, Counter_1.autoInc()];
+                        case 0: return [4 /*yield*/, code_ittyni_api_1.autoInc()];
                         case 1:
                             count = _a.sent();
                             if (!count) return [3 /*break*/, 3];
