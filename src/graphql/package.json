@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "gql server for motabari3",
   "main": "server.js",
+  "types" : "globals.d.ts",
   "scripts": {
     "clean": "rm -rf build",
     "start": "npm run clean && tsc && node build/server.js",
