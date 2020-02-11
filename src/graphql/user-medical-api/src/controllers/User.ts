@@ -116,7 +116,7 @@ class User {
 
     getUserProfile = async ({ token } : any)=>{
 
-        let decodeToken : decodeToken | any = jwt.decode(token);
+        let decodeToken : DecodeToken | any = jwt.decode(token);
 
         if(decodeToken){
 
