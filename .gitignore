@@ -1,7 +1,6 @@
 node_modules
-graphql/node_modules
-graphql/src/user-medical-api/.git
-graphql/src/code-ittyni-api/.git
-src/graphql/src/code-ittyni-api/
-src/graphql/src/db-ittyni-api/
-src/graphql/src/user-medical-api/
+src/graphql/node_modules
+src/graphql/dist
+src/graphql/src/code-ittyni-api/.git
+src/graphql/src/db-ittyni-api/.git
+src/graphql/src/user-medical-api/.git
